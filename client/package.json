@@ -6,6 +6,7 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
     "@material-ui/lab": "latest",
+    "@semantic-ui-react/css-patch": "^1.1.2",
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.8.0",
     "axios": "^0.19.2",
@@ -43,7 +44,8 @@
     "start_dev": "./node_modules/.bin/env-cmd -f .env react-scripts start",
     "build_dev": "./node_modules/.bin/env-cmd -f .env react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "semantic-ui-css-patch"
   },
   "eslintConfig": {
     "extends": "react-app"
